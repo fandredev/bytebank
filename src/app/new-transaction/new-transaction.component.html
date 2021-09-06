@@ -1,0 +1,16 @@
+<section class="container">
+  <form class="form" (ngSubmit)="transfer()">
+    <h2 class="title">New Transaction</h2>
+    <div class="form-field">
+      <label class="label" for="value">Value</label>
+      <input class="input" name="value" type="number" id="value" [(ngModel)]="value" />
+    </div>
+    <div class="form-field">
+      <label class="label" for="destiny">Destiny</label>
+      <input class="input" name="destiny" type="text" id="destiny" [(ngModel)]="destiny" />
+    </div>
+    <div class="button-wrapper">
+      <button class="button" type="submit">Transfer</button>
+    </div>
+  </form>
+</section>

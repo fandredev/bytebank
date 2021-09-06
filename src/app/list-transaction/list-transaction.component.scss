@@ -1,0 +1,41 @@
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.table {
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+  thead {
+    color: var(--primary);
+
+    > th {
+      padding: 10px;
+      border-bottom: 2px solid green;
+    }
+  }
+
+  tr {
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    tr:last-child {
+      .content {
+        border-bottom: none;
+      }
+    }
+  }
+
+  td {
+    padding: 10px;
+    border-bottom: 1px solid var(--cinza-claro);
+  }
+}
+.no-transferences {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+<section class="container">
+  <h2 class="title">Transferências</h2>
+  <table *ngIf="transfers.length > 0; else listEmpty" class="table">  
+    <thead class="header">
+      <th class="content">Date</th>
+      <th class="content">Value</th>
+      <th class="content">Destiny</th>
+    </thead>
+    <tbody>
+      <tr class="line" *ngFor="let t of transfers">
+        <td class="content">{{t.date | date: 'short'}}</td>
+        <td class="content">{{t.value | currency}}</td>
+        <td class="content">{{t.destiny}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #listEmpty>
+    <p class="no-transferences">No transferences registered.</p>
+  </ng-template>
+</section>

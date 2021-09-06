@@ -1,0 +1,19 @@
+header {
+  background-color: var(--primary);
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  .active {
+    display: none;
+  }
+  a {
+    font-size: 20px;
+  }
+}
+
+main {
+  background-color: #fcfcfc;
+  padding: var(--padding);
+}
